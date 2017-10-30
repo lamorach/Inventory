@@ -1,0 +1,105 @@
+<html>
+    <head>
+        <title>Inventory Application</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    </head>
+    <body>
+        <div class="container-fluid">
+            <div class="title-row"><h1>Inventory System</h1></div>
+            <div class="row">
+                <ul id="console-section" class="nav nav-pills">
+                    <li class="active"><a>Games</a></li>
+                    <li><a>Consoles</a></li>
+                    <li><a>Game Accessories</a></li>
+                    <li><a>Toys</a></li>
+                    <li><a>PC Components</a></li>
+
+                </ul>
+            </div>
+            <form id="filter-section form-horizontal row">
+                <div class="col-md-5">
+                    <label class="col-xs-3">Title</label>
+                    <div class="col-xs-9">
+                        <input type="text" class="form-control col-xs-9" id="title" />
+                    </div>
+                </div>
+                <div class="form-group col-md-5">
+                    <label class="col-xs-3">Condition</label>
+                    <div class="col-xs-9">
+                        <input type="text" class="form-control col-xs-9" id="condition" />
+                    </div>
+                </div>
+                <div class="form-group col-md-2">
+                    <label class="col-xs-3">Max $</label>
+                    <div class="col-xs-9">
+                        <input type="text" class="form-control" id="maxPrice" />
+                    </div>
+                </div>
+                <div class="form-group col-md-5">
+                    <label class="col-xs-3">Console</label>
+                    <div class="col-xs-9">
+                        <input type="text" class="form-control" id="console" />
+                    </div>
+                </div>
+                <div class="form-group col-md-5">
+                    <label class="col-xs-3">Genre</label>
+                    <div class="col-xs-9">
+                        <input type="text" class="form-control" id="genre" />
+                    </div>
+                </div>
+                <div class="form-group col-md-2">
+                    <label class="col-xs-3">Min $</label>
+                    <div class="col-xs-9">
+                        <input type="text" class="form-control" id="minPrice" />
+                    </div>
+                </div>
+                <div class="form-group col-xs-12">
+                    <label class="col-xs-3">Barcode</label>
+                    <div class="col-xs-9">
+                        <input type="text" class="form-control" id="barcode" />
+                    </div>
+                </div>
+            </form>
+            <div id="results-window row">
+                <ul id="console-section" class="nav nav-tabs">
+                    <li class="active"><a>Xbox</a></li>
+                    <li><a>Gamecube</a></li>
+                    <li><a>SNES</a></li>
+                    <li><a>NES</a></li>
+                    <li><a>PS 2</a></li>
+                    <li><a>Playstation</a></li>
+                    <li><a>Atari</a></li>
+                    <li><a>Xbox One</a></li>
+                    <li><a>Wii</a></li>
+                    <li><a>Wii U</a></li>
+                    <li><a>3DS</a></li>
+                    <li><a>DS</a></li>
+                </ul>
+                <table id="results-table" class="table-striped table">
+                    <thead>
+                        <tr>
+                            <th rowspan="2">Title</th>
+                            <th rowspan="2">Genre</th>
+                            <th rowspan="2">Base Price</th>
+                            <th colspan="3" style="text-align:center">In Stock</th>
+                        </tr>
+                        <tr>
+                            <th>New</th>
+                            <th>Used</th>
+                            <th>Scratched</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <td>Marvel Puzzle Quest</td>
+                        <td>Puzzle</td>
+                        <td>$10.00</td>
+                        <td>1</td>
+                        <td>0</td>
+                        <td>0</td>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <script type="text/javascript" data-main="main" src="library/require.js" />
+    </body>
+</html>
